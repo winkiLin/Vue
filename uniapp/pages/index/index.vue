@@ -15,21 +15,21 @@
 			}
 		},
 		onLoad() {
-			this.$api.getSmsCode({
-				mobile: '17180630538',
-				device_version: "158",
-				device_time: "1626667208",
-				device_type: "windows",
-				timestamp: "1626667208",
-				signature: 'FBE02E6F420E103775CFF87D013132AB',
-			}).then(res => {
-				console.log(res,'返回数据')
-			}, err => {
-				console.log(err,'报错信息')
-			})
+			// this.$api.getSmsCode({
+			// 	mobile: '17180630538',
+			// 	device_version: "158",
+			// 	device_time: "1626667208",
+			// 	device_type: "windows",
+			// 	timestamp: "1626667208",
+			// 	signature: 'FBE02E6F420E103775CFF87D013132AB',
+			// }).then(res => {
+			// 	console.log(res,'返回数据')
+			// }, err => {
+			// 	console.log(err,'报错信息')
+			// })
 		},
 		created(){
-	
+			console.log(this.$store.state.num,'查看')
 		},
 		methods: {
 

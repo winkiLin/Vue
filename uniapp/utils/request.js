@@ -1,7 +1,7 @@
 // 自定义拦截器
 class MyRequest {
 	addInterceptors;
-
+	
 	constructor() {
 		this.addInterceptors = {
 			request: fn => {
@@ -297,7 +297,6 @@ var _ = {
 		 */
 		ret.__proto__.example = example;
 		// ret.example = example;
-
 		return ret;
 	},
 
