@@ -173,6 +173,7 @@ function observer(value){
 	})
 }
 
+
 class Vue{
 	constructor(options){
 		this._data = options.data;

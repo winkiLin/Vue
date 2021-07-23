@@ -11,6 +11,13 @@
 	// 	}]
 	// },
 	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
 		// 演示-组件
 		{
 			"path": "pages/example/components",
@@ -51,6 +58,26 @@
 					"backgroundColor": "rgba(0,0,0,0)",
 					"popGesture": "none"
 				}
+			}
+		},
+		{
+			"path": "pages/login/reg",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/login/forget",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/login/agreement",
+			"style": {
+				"navigationBarTitleText": "用户协议"
 			}
 		}
 	],
