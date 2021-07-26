@@ -7,11 +7,13 @@
 	unbind:只调用一次，指令与元素解绑时调用
  */
 import copy from './copy'
+import longpress from './longpress.js'
 
 // 自定义指令
 
 const directives = {
-	copy
+	copy,
+	longpress
 }
 
 export default {
