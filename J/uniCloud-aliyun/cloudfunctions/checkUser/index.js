@@ -5,7 +5,6 @@ exports.main = async (event, context) => {
 	// 获取 绑定电话号码的用户
 	const res = db.collection('users').where({
 		phone:event.phone
-	}).get()
+	}).get();
 	return res
-	
 };

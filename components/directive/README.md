@@ -1,4 +1,4 @@
-# router
+# directive
 
 ## Project setup
 ```
