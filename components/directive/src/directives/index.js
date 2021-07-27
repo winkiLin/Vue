@@ -8,12 +8,20 @@
  */
 import copy from './copy'
 import longpress from './longpress.js'
+import debounce from './debounce.js'
+import emoji from './emoji.js'
+import drag from './drag.js'
+
 
 // 自定义指令
 
 const directives = {
 	copy,
-	longpress
+	longpress,
+	debounce,
+	emoji,
+	drag,
+	
 }
 
 export default {
