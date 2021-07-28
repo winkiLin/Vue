@@ -1,66 +1,56 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view>
+		<NavBar  :showDiy='true' :isBack="false">
+			<template slot='left'>
+				<view style="width: 50upx;height: 50upx;display: flex;align-items: center;">
+					<u-image src="../../static/logo.png" width="100%" height="100%" style="flex-shrink: 0;"></u-image>
+					<view class="" style="margin-left: 20upx;">
+						<text>loremloremloremloremloremlorem</text>
+					</view>
+				</view>
+			</template>
+			<template slot='right'>
+				<view class="right-part" style="display: flex;">
+					<view class="" style="position: relative;">
+						<u-icon name="bell"></u-icon>
+						<u-badge type="error" size="mini" count="9" :absolute="true" :offset="offsetArr"></u-badge>
+					</view>
+					<view class="" style="margin-left: 30upx;">
+						<u-icon name="list"></u-icon>
+					</view>
+				</view>
+			</template>
+		</NavBar>
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-			// this.$api.getSmsCode({
-			// 	mobile: '17180630538',
-			// 	device_version: "158",
-			// 	device_time: "1626667208",
-			// 	device_type: "windows",
-			// 	timestamp: "1626667208",
-			// 	signature: 'FBE02E6F420E103775CFF87D013132AB',
-			// }).then(res => {
-			// 	console.log(res,'返回数据')
-			// }, err => {
-			// 	console.log(err,'报错信息')
-			// })
-		},
-		created(){
-			console.log(this.$store.state.num,'查看')
-		},
-		methods: {
+import NavBar from '../../components/navbar.vue'
+export default {
+	components:{
+		NavBar
+	},
+	data() {
+		return {
+			navTitle:'首页',
+			background: {
+				backgroundColor: '#001f3f',
 
-		}
+				// 导航栏背景图
+				background: 'url(https://cdn.uviewui.com/uview/swiper/1.jpg) no-repeat',
+				// 还可以设置背景图size属性
+				backgroundSize: 'cover',
+
+				// 渐变色
+				backgroundImage: 'linear-gradient(45deg, rgb(28, 187, 180), rgb(141, 198, 63))'
+			},
+			offsetArr:[-10,-18]
+		};
 	}
+};
 </script>
-
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+<style scoped lang="scss">
+	.right-slot{
+		padding: 0 30rpx;
 	}
 </style>
