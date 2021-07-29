@@ -1,0 +1,113 @@
+
+.xt_swiper--container {
+	font-size: 28rpx;
+	width: 100vw;
+	min-height: 120rpx;
+	white-space: nowrap;
+	-webkit-transition-duration: 0.6s;
+	        transition-duration: 0.6s;
+	position: relative;
+}
+.xt_swiper--container .xt_swiper--content {
+	display: inline-block;
+	width: 100vw;
+	height: 100%;
+	vertical-align: top;
+}
+.xt_swiper--content .xt_swiper--content-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 10rpx;
+}
+.xt_swiper--content-container .default_content-image {
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 12rpx;
+}
+.xt_swiper--content-container .default_content {
+	padding-left: 20rpx;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.default_content .default_content-title {
+	font-size: 28rpx;
+	color: #333333;
+}
+.default_content .default_content-desc {
+	font-size: 24rpx;
+	color: #999999;
+}
+
+/* 按钮
+ */
+.xt_swiper--btn-container {
+	display: inline-block;
+	height: 100%;
+	/* scroll-snap-align: end;
+ */
+}
+.xt_swiper--btn-left-container {
+	position: absolute;
+	left: 0;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	        transform: translate3d(-100%, 0, 0);
+}
+.xt_swiper--btn-right-container {
+	position: absolute;
+	right: 0;
+	-webkit-transform: translate3d(100%, 0, 0);
+	        transform: translate3d(100%, 0, 0);
+}
+
+/* 按钮
+ */
+.xt_swiper--btn {
+	display: inline-block;
+	height: 100%;
+}
+.xt_swiper--btn .xt_swiper--btn-text {
+	font-size: 28rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 0 30rpx;
+	height: 100%;
+	color: #ffffff;
+}
+
+/* 组件设置层级
+ */
+.xt_add-index {
+	z-index: 100;
+}
+
+/* 蒙版
+ */
+.xt_swiper--mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0);
+}
+
