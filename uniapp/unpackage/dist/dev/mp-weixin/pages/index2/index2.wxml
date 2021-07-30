@@ -1,1 +1,1 @@
-<view class="box data-v-214b4c74"><view class="get data-v-214b4c74"><text class="data-v-214b4c74">GET</text></view><view class="post data-v-214b4c74"><text class="data-v-214b4c74">POST</text></view></view>
+<view class="box data-v-214b4c74"><view data-event-opts="{{[['tap',[['toGetDetail',['$event']]]]]}}" class="get data-v-214b4c74" bindtap="__e"><text class="data-v-214b4c74">{{getName}}</text></view><view data-event-opts="{{[['tap',[['toPostDetail',['$event']]]]]}}" class="post data-v-214b4c74" bindtap="__e"><text class="data-v-214b4c74">{{postName}}</text></view></view>

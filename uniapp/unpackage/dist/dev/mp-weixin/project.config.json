@@ -4,11 +4,12 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false
+    "urlCheck": false,
+    "minified": false
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "touristappid",
+  "appid": "wxab14e68fa4509190",
   "projectname": "mini_demo",
   "condition": {
     "search": {
@@ -24,15 +25,8 @@
       "list": []
     },
     "miniprogram": {
-      "current": 0,
-      "list": [
-        {
-          "id": 0,
-          "name": "pages/index2/index2",
-          "pathName": "pages/index2/index2",
-          "query": ""
-        }
-      ]
+      "current": -1,
+      "list": []
     }
   }
 }

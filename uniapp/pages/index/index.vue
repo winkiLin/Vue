@@ -17,22 +17,22 @@
 				</view>
 			</template>
 		</NavBar>
-		<slide
+<!-- 		<slide
 			:left="[{ text: '完成', callback: leftCb }]"
 			:right="[{ text: '完成',callback:rightCb1 }, { text: '删除', backgroundColor: '#E53A40',callback:rightCb2 }]"
 			:content="{ title: '测试标题', desc: '测试描述' }"
-		></slide>
+		></slide> -->
 	</view>
 </template>
 
 <script>
 import NavBar from '../../components/navbar.vue';
-import Slide from '../../components/xt-swiperCell/xt-swiperCell.vue';
+// import Slide from '../../components/xt-swiperCell/xt-swiperCell.vue';
 
 export default {
 	components: {
 		NavBar,
-		Slide
+		// Slide
 	},
 	data() {
 		return {

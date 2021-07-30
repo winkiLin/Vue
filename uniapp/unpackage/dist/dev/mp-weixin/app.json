@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/index2/index2",
     "pages/index/index",
-    "pages/index2/index2"
+    "pages/postDetail/postDetail",
+    "pages/getDetail/getDetail"
   ],
   "subPackages": [],
   "window": {

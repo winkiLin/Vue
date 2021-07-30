@@ -3,6 +3,14 @@
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index2/index2",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		
+		},
 		// navbar-自定义导航栏	
 		{
 			"path": "pages/index/index",
@@ -11,19 +19,28 @@
 			}
 		}
 	    ,{
-            "path" : "pages/index2/index2",
+            "path" : "pages/postDetail/postDetail",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "首页",
+                "navigationBarTitleText": "发布需求",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/getDetail/getDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加需求",
                 "enablePullDownRefresh": false
             }
             
         }
     ],
 	"globalStyle": {
-		"navigationStyle":"custom", //可以去掉小程序端的顶部导航
-		"app-plus":{
-			"titleNView":false // 去掉APP、H5的顶部导航
+		"navigationStyle": "custom", //可以去掉小程序端的顶部导航
+		"app-plus": {
+			"titleNView": false // 去掉APP、H5的顶部导航
 		},
 		"navigationBarTextStyle": "#FFFFFF",
 		"navigationBarTitleText": "uni-app",

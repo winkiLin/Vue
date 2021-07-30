@@ -68,9 +68,6 @@
 			</view>
 		</view>
 		<view class="xt_swiper--mask" v-if="offsetWidth !== 0" @touchstart.stop="handleMask"></view>
-		<view class="">
-			测试文字放lorem
-		</view>
 	</view>
 </template>
 
@@ -199,7 +196,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
 .xt_swiper--container {
 	font-size: 28rpx;
 	width: 100vw;
