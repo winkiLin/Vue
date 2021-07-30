@@ -13,7 +13,7 @@
 					"titleNView": false // 去掉APP、H5的顶部导航
 				}
 			}
-		
+
 		},
 		// navbar-自定义导航栏	
 		{
@@ -21,28 +21,32 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		}, {
+			"path": "pages/postDetail/postDetail",
+			"style": {
+				"navigationBarTitleText": "发布需求",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/getDetail/getDetail",
+			"style": {
+				"navigationBarTitleText": "添加需求",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	    ,{
-            "path" : "pages/postDetail/postDetail",
+            "path" : "pages/fileList/fileList",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "发布需求",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/getDetail/getDetail",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "添加需求",
+                "navigationBarTitleText": "文件列表",
                 "enablePullDownRefresh": false
             }
             
         }
     ],
 	"globalStyle": {
-		"navigationBarTextStyle": "#5555ff",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#5555ff",
 		"backgroundColor": "#F8F8F8"

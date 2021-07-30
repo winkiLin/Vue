@@ -95,6 +95,9 @@ try {
   components = {
     uField: function() {
       return __webpack_require__.e(/*! import() | uview-ui/components/u-field/u-field */ "uview-ui/components/u-field/u-field").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-field/u-field.vue */ 106))
+    },
+    uniFilePicker: function() {
+      return Promise.all(/*! import() | uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker.vue */ 172))
     }
   }
 } catch (e) {
@@ -158,14 +161,38 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
       name: '',
-      mobile: '' };
+      mobile: '',
+      imageValue: [] };
 
-  } };exports.default = _default;
+  },
+  methods: {
+    // 获取上传状态
+    select: function select(e) {
+      console.log('选择文件：', e);
+    },
+    // 获取上传进度
+    progress: function progress(e) {
+      console.log('上传进度：', e);
+    },
+
+    // 上传成功
+    success: function success(e) {
+      console.log('上传成功');
+    },
+
+    // 上传失败
+    fail: function fail(e) {
+      console.log('上传失败：', e);
+    } } };exports.default = _default;
 
 /***/ })
 

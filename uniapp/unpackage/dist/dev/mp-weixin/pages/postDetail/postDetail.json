@@ -2,6 +2,7 @@
   "navigationBarTitleText": "发布需求",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "u-field": "/uview-ui/components/u-field/u-field"
+    "u-field": "/uview-ui/components/u-field/u-field",
+    "uni-file-picker": "/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker"
   }
 }
