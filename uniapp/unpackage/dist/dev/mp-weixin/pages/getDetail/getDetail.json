@@ -2,7 +2,6 @@
   "navigationBarTitleText": "添加需求",
   "enablePullDownRefresh": false,
   "usingComponents": {
-    "getDetail-u-waterfall-right": "/pages/getDetail/getDetail-u-waterfall-right",
     "u-button": "/uview-ui/components/u-button/u-button",
     "u-waterfall": "/uview-ui/components/u-waterfall/u-waterfall",
     "u-lazy-load": "/uview-ui/components/u-lazy-load/u-lazy-load",

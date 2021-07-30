@@ -7,7 +7,11 @@
 			"path": "pages/index2/index2",
 			"style": {
 				"navigationBarTitleText": "首页",
-				"enablePullDownRefresh": false
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom", //可以去掉小程序端的顶部导航
+				"app-plus": {
+					"titleNView": false // 去掉APP、H5的顶部导航
+				}
 			}
 		
 		},
@@ -38,13 +42,9 @@
         }
     ],
 	"globalStyle": {
-		"navigationStyle": "custom", //可以去掉小程序端的顶部导航
-		"app-plus": {
-			"titleNView": false // 去掉APP、H5的顶部导航
-		},
-		"navigationBarTextStyle": "#FFFFFF",
+		"navigationBarTextStyle": "#5555ff",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#5555ff",
 		"backgroundColor": "#F8F8F8"
 	}
 }

@@ -98,19 +98,19 @@ var components
 try {
   components = {
     uButton: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-button/u-button */ "uview-ui/components/u-button/u-button").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-button/u-button.vue */ 166))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-button/u-button */ "uview-ui/components/u-button/u-button").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-button/u-button.vue */ 113))
     },
     uWaterfall: function() {
-      return Promise.all(/*! import() | uview-ui/components/u-waterfall/u-waterfall */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-waterfall/u-waterfall")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-waterfall/u-waterfall.vue */ 173))
+      return Promise.all(/*! import() | uview-ui/components/u-waterfall/u-waterfall */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uview-ui/components/u-waterfall/u-waterfall")]).then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-waterfall/u-waterfall.vue */ 120))
     },
     uLazyLoad: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-lazy-load/u-lazy-load */ "uview-ui/components/u-lazy-load/u-lazy-load").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-lazy-load/u-lazy-load.vue */ 180))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-lazy-load/u-lazy-load */ "uview-ui/components/u-lazy-load/u-lazy-load").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-lazy-load/u-lazy-load.vue */ 127))
     },
     uIcon: function() {
       return __webpack_require__.e(/*! import() | uview-ui/components/u-icon/u-icon */ "uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 85))
     },
     uLoadmore: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-loadmore/u-loadmore */ "uview-ui/components/u-loadmore/u-loadmore").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-loadmore/u-loadmore.vue */ 187))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-loadmore/u-loadmore */ "uview-ui/components/u-loadmore/u-loadmore").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-loadmore/u-loadmore.vue */ 134))
     }
   }
 } catch (e) {
